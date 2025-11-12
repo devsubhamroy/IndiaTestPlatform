@@ -6,14 +6,16 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::view('/dashboard', 'student.index')->name('student.dashboard');
-Route::view('/student/test', 'student/test')->name('student.test');
+
 
 Route::view('/', 'admin.index')->name('admin.dashboard');
 Route::view('/manage-test', 'admin.manage')->name('admin.manage');
 Route::view('/student-result', 'admin.student_result')->name('admin.student_result');
 Route::view('/student-info', 'admin.student_info')->name('admin.student_info');
 Route::view('/student-qns', 'admin.create_qns')->name('admin.student_qns');
+
+Route::view('/dashboard', 'student.index')->name('student.dashboard');
+Route::view('/student/test', 'student/test')->name('student.test');
 
 
 use App\Http\Controllers\{
